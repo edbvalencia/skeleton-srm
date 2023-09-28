@@ -1,0 +1,8 @@
+# Utilizamos una imagen base con Node.js
+FROM node:latest
+
+# Establecemos el directorio de trabajo
+WORKDIR /app/frontend
+
+# Dejamos la consola abierta sin iniciar la aplicación
+CMD ["bash"]

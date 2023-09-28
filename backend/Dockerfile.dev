@@ -1,0 +1,10 @@
+# Utilizamos una imagen base con JDK 17
+FROM openjdk:17
+
+# Establecemos el directorio de trabajo
+WORKDIR /app/backend
+
+# Puerto que expone Spring
+EXPOSE 8080
+# Dejamos la consola abierta sin iniciar la aplicación
+CMD ["bash"]
