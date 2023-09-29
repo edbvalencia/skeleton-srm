@@ -1,5 +1,6 @@
 version: '3.9'
 services:
+
   backend:
     container_name: app-backend
     build:
@@ -21,6 +22,9 @@ services:
     tty: true
     volumes:
       - ./frontend:/app/frontend
+    ports:
+      - "5173:5173"
+
 
   database:
     image: mongo
@@ -45,8 +49,8 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: 'edbvalencia'
       ME_CONFIG_MONGODB_ADMINPASSWORD: 'root'
       ME_CONFIG_MONGODB_PORT: '27017'
-      ME_CONFIG_BASICAUTH_USERNAME: 'sa'
-      ME_CONFIG_BASICAUTH_PASSWORD: 'sa'
+      ME_CONFIG_BASICAUTH_USERNAME: 'root'
+      ME_CONFIG_BASICAUTH_PASSWORD: 'root'
     links:
       - database
     ports:
