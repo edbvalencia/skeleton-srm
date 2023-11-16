@@ -41,11 +41,3 @@ El cliente de MongoDB, Mongo Express, se encuentra en el contenedor `dbclient`. 
 - **Zsh:** La estructura incluye configuraciones para Zsh, un shell de Unix, que mejora la productividad con sus características y plugins.
 
 - **Pnpm:** Pnpm se utiliza como gestor de paquetes para el frontend React, asegurando una gestión eficiente de las dependencias.
-
-## Instrucciones de Uso
-
-1. Clona este repositorio.
-
-```bash
-git clone <URL_DEL_REPOSITORIO>
-cd <NOMBRE_DEL_REPOSITORIO>
