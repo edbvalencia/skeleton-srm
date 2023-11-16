@@ -28,9 +28,9 @@ services:
     image: mongo:latest
     restart: unless-stopped
     environment:
-      MONGO_INITDB_ROOT_USERNAME: 'edbvalencia'
+      MONGO_INITDB_ROOT_USERNAME: 'root'
       MONGO_INITDB_ROOT_PASSWORD: 'root'
-      MONGO_INITDB_DATABASE: library
+      MONGO_INITDB_DATABASE: exampledb
     volumes:
       - ./database/init/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
       - ./database/data:/data/db
@@ -44,7 +44,7 @@ services:
     restart: unless-stopped
     environment:
       ME_CONFIG_MONGODB_SERVER: 'database'
-      ME_CONFIG_MONGODB_ADMINUSERNAME: 'edbvalencia'
+      ME_CONFIG_MONGODB_ADMINUSERNAME: 'root'
       ME_CONFIG_MONGODB_ADMINPASSWORD: 'root'
       ME_CONFIG_MONGODB_PORT: '27017'
       ME_CONFIG_BASICAUTH_USERNAME: 'sa'
