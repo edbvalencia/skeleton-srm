@@ -1,5 +1,5 @@
 # skeleton-srm
-### Una estructura de proyecto con Docker, Java, React (Pnpm), Zsh
+### Estructura de Proyecto con Docker Compose para Java (Spring Boot), Node.js (React), MongoDB, y MongoDB Express
 
 Este repositorio proporciona una estructura lista para el desarrollo de una aplicación que utiliza Java para el backend, React para el frontend, y MongoDB como base de datos. Además, se incluyen configuraciones para el uso de Docker, Zsh con plugins útiles, y Pnpm como gestor de paquetes.
 
