@@ -21,12 +21,12 @@ El frontend está ubicado en la carpeta `frontend`. Al igual que el backend, se 
 
 ### Base de Datos (MongoDB)
 
-La base de datos MongoDB está configurada en el contenedor `database`. Se inicializa con un usuario y contraseña específicos definidos en las variables de entorno.
+La base de datos MongoDB está configurada en el contenedor `database`. Se inicializa con un usuario y contraseña específicos definidos en las variables de entorno. (Puedes cambiar esto a tu preferencia)
 
 - **Puerto:** 27017
-- **Usuario:** edbvalencia
+- **Usuario:** root
 - **Contraseña:** root
-- **Base de Datos:** library
+- **Base de Datos:** exampledb
 
 ### Cliente de Base de Datos (Mongo Express)
 
